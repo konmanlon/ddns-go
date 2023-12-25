@@ -1,0 +1,14 @@
+cloudflare:
+  authorize:
+    apiKey: "efb445db9a2edc3a4142b89cfe2a067d23681"
+    email: "example@gmail.com"
+  dns:
+    domain: "example.com"
+    recordName: "ddns"
+    endpoint: "http://ifconfig.me"
+    scheduledTask: 60
+
+notifications:
+  telegram:
+    botToken: "1989000000:AAEXN-XXXXXXXXjzyEgBdu7CXXXXXXXXXXX"
+    chatID: -060400000
