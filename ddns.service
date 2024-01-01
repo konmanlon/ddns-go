@@ -1,0 +1,12 @@
+[Unit]
+Description=DDNS
+After=network.target nss-lookup.target
+
+[Service]
+NoNewPrivileges=true
+ExecStart=/opt/ddns-go/ddns-arm64 -config /opt/ddns-go/config.yaml -log /opt/ddns-go/ddns.log
+Restart=on-failure
+RestartPreventExitStatus=22
+
+[Install]
+WantedBy=multi-user.target
